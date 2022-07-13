@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap');
+body {
+  margin:0;
+}
+.show-for-sr {
+  position: absolute!important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+}
+.qemb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #444;
+  font-weight: 600;
+  font-size:14px;
+  line-height: 1;
+  border-bottom:1px solid #9a9a9a;
+  padding: 0 25px;
+  background: #efefef
+}
+.qemb .qemb-logo {
+  margin:0;
+}
+.qemb .qemb-logo a {
+  display: block;
+  overflow: hidden;
+  height:30px;
+  width:105px;
+  background:url(../img/menubar/qemb-logo.png) no-repeat left top;
+  background-size:105px 30px;
+}
+.qemb .qemb-menu {
+  display:flex;
+  align-items: center;
+}
+.qemb .qemb-groups {
+  display: flex; 
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+.qemb .qemb-groups>li {
+  margin:0;
+  padding:0;
+  position: relative;
+}
+.qemb .qemb-groups>li>span {
+  display:block;
+  padding:8px 10px;
+  cursor:pointer;
+  position: relative;
+  user-select: none;
+}
+.qemb .qemb-groups>li>span:hover {
+  background: #ddd;
+}
+.qemb .qemb-groups>li>span.active {
+  background: #2370A0;
+  color: #fff;
+}
+.qemb .qemb-groups>li>ul {
+  position: absolute;
+  top:30px;
+  left:0;
+  list-style: none;
+  margin:0;
+  padding:5px 0;
+  background: rgba(234, 232, 232, 0.93);
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
+  border: 1px solid #ccc;
+  z-index:9999;
+  border-radius: 0 0 5px 5px;
+  display:none;
+}
+.qemb .qemb-groups>li>ul li {
+  display:block;
+  margin:0;
+  padding:0;
+}
+.qemb .qemb-groups>li>ul li a {
+  display:block;
+  white-space: nowrap;
+  transition: none;
+  color: #444;
+  text-decoration: none;
+  padding:7px 15px 7px 40px;
+  background-size:20px 20px;
+  background-repeat: no-repeat;
+  background-position: 15px 4px;
+}
+.qemb .qemb-groups>li>ul li a:hover {
+  background-color: rgba(35, 112, 160, 0.82);
+  color: #fff;
+}
+.qemb .qemb-groups>li:nth-child(1)>ul li:nth-child(1) a {
+  background-image:url(../img/menubar/python.png);
+}
+.qemb .qemb-groups>li:nth-child(1)>ul li:nth-child(2) a {
+  background-image:url(../img/menubar/python.png);
+}
+.qemb .qemb-groups>li:nth-child(1)>ul li:nth-child(3) a {
+  background-image:url(../img/menubar/python.png);
+}
+.qemb .qemb-groups>li:nth-child(1)>ul li:nth-child(4) a {
+  background-image:url(../img/menubar/julia.png);
+}
+.qemb .qemb-groups>li:nth-child(1)>ul li:nth-child(5) a {
+  background-image:url(../img/menubar/datascience.png);
+}
+.qemb .qemb-groups>li:nth-child(1)>ul li:nth-child(6) a {
+  background-image:url(../img/menubar/cheatsheets.png);
+}
+.qemb .qemb-groups>li:nth-child(2)>ul li:nth-child(1) a {
+  background-image:url(../img/menubar/python.png);
+}
+.qemb .qemb-groups>li:nth-child(2)>ul li:nth-child(2) a {
+  background-image:url(../img/menubar/julia.png);
+}
+.qemb .qemb-groups>li:nth-child(2)>ul li:nth-child(3) a {
+  background-image:url(../img/menubar/jupinx.png);
+}
+.qemb .qemb-groups>li:nth-child(3)>ul li:nth-child(1) a {
+  background-image:url(../img/menubar/nblibrary.png);
+}
+.qemb .qemb-groups>li:nth-child(3)>ul li:nth-child(2) a {
+  background-image:url(../img/menubar/notes.png);
+}
+.qemb .qemb-groups>li:nth-child(4)>ul li:nth-child(1) a {
+  background-image:url(../img/menubar/blog.png);
+}
+.qemb .qemb-groups>li:nth-child(4)>ul li:nth-child(2) a {
+  background-image:url(../img/menubar/forum.png);
+}
+.qemb .qemb-links {
+  display:flex;
+  align-items: center;
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+.qemb .qemb-links li {
+  margin:0 0 0 20px;
+  padding:0;
+}
+.qemb .qemb-links li a {
+  display:block;
+  width:20px;
+  height:20px;
+  background-size:20px 20px;
+}
+.qemb .qemb-links li:nth-child(1) a {
+  background-image:url(../img/menubar/shop.png);
+}
+.qemb .qemb-links li:nth-child(2) a {
+  background-image:url(../img/menubar/github.png);
+}
+.qemb .qemb-links li:nth-child(3) a {
+  background-image:url(../img/menubar/twitter.png);
+}
+@media (max-width: 650px) {
+  .qemb {
+    justify-content: center;
+  }
+  .qemb .qemb-menu {
+    display:none;
+  }
+}
