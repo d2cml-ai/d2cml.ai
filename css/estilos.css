@@ -7,8 +7,8 @@ td {
     width: 33%;
 }
 a{
-    color: gray 
+    color: #444444;
 }
-/*a:hover{
-    color: red;
-}*/
+a:hover{
+    color: #444444;
+}
