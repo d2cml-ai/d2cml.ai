@@ -1,0 +1,19 @@
+---
+layout: index
+---
+
+{{ content }}
+
+<div class="team-members">
+
+<h2>Founding Members and Co-Chairs</h2>
+
+{% assign team-members = site.team-members | where: 'role', 'Founding Members and Co-Chairs' %}
+
+<ul>
+{% for team-member in team-members reversed %}
+	<li><img alt="" src="/figs/{{ team-member.image }}" style="width: 100px; height: 100px;"><a href="{{ team-member.link }}">{{ team-member.name }}</a> {{ team-member.content }}</li>
+{% endfor %}
+</ul>
+
+</div>
