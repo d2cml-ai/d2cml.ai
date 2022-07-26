@@ -1,0 +1,14 @@
+.foto {
+    border-radius: 50%;
+    width: 50%;
+}
+td {
+    text-align: center;
+    width: 33%;
+}
+a{
+    color: #444444;
+}
+a:hover{
+    color: #444444;
+}
