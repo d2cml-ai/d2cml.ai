@@ -15,8 +15,9 @@ body {
   align-items: center;
   font-family: 'Open Sans', sans-serif;
   color: #444;
+  text-align: center;
   font-weight: 600;
-  font-size:14px;
+  font-size:16px;
   line-height: 1;
   border-bottom:1px solid #9a9a9a;
   padding: 0 25px;
@@ -36,6 +37,7 @@ body {
 .qemb .qemb-menu {
   display:flex;
   align-items: center;
+  /* size: 22px; */
 }
 .qemb .qemb-groups {
   display: flex; 
